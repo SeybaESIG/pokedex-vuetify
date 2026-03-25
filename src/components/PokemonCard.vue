@@ -1,6 +1,9 @@
 <template>
   <!-- Carte individuelle pour afficher les détails d'un Pokémon -->
-  <v-card hover>
+  <v-card
+    :to="`/pokemon/${pokemon.id}`"
+    hover
+  >
     <v-img
       :src="getImageUrl(pokemon.img)"
       :alt="pokemon.name"
